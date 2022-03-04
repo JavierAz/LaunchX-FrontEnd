@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles Espaciales</title>
+    <link rel="stylesheet" href="css/loginStilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo.jpeg" alt="logo" width="100px"
+                height="100px"></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Pediddos<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stock.html">Stock</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- fin del navbar -->
+    <!-- formulario -->
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Login Form -->
+            <div class="fadeIn first">
+                <h1>Haz tu pedido!</h1>
+            </div>
+            <form name="RegisterServlet" action="RegisterServlet" method="post">
+                <p>Nombre</p>
+                <input type="text" id="Nombre" class="fadeIn second" name="Nombre" placeholder="Nombre">
+                <p>Teléfono</p>
+                <input type="text" id="Teléfono" class="fadeIn third" name="Teléfono" placeholder="Teléfono">
+                <p>Correo Electrónico</p>
+                <input type="text" id="Correo" class="fadeIn third" name="Correo" placeholder="Correo">
+                <hr class="my-4">
+                <p>Pastel de elección:</p>
+                <select name="pastel" id="pastel" class="form-control fadeIn thrird">
+                    <option value="Red-Velvet">Red-Velvet</option>
+                    <option value="leches">3 Leches</option>
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Tarta">Tarta de frutos rojos</option>
+                </select>
+                <br>
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-light p-4">
+                            <h6 class="text-dark">Selecciona el otro sabor</h6>
+                            <select name="pastel" id="pastel" class="form-control fadeIn thrird">
+                                <option value="Red-Velvet">Red-Velvet</option>
+                                <option value="leches">3 Leches</option>
+                                <option value="Vainilla">Vainilla</option>
+                                <option value="Chocolate">Chocolate</option>
+                                <option value="Fresa">Fresa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-light bg-light">
+                        <i> Deseas combinar los sabores?</i>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+                <br>
+                <p>Selección de adornos:</p>
+                <input type="radio">
+                <img src="./img/chocolate.jpeg" alt="chocolate" width="175px" height="175px"><br>
+                <input type="radio">
+                <img src="./img/fresa.jpeg" alt="fresa" width="175px" height="175px"><br>
+                <input type="radio">
+                <img src="./img/leches.jpeg" alt="3 leches" width="175px" height="175px"><br>
+                <input type="radio">
+                <img src="./img/red-velvet.jpeg" alt="red velvet" width="175px" height="175px"><br>
+                <input type="radio">
+                <img src="./img/vainilla.jpeg" alt="vainilla" width="175px" height="175px">
+                <br>
+                <p>Descripción</p>
+                <input type="text" id="des" class="fadeIn second" name="des" placeholder="Ej: Felicidades Dan!">
+                <input type="submit" class="fadeIn fourth" value="Pedir!">
+            </form>
+            <div id="formFooter">
+                <a class="underlineHover" href="index.html">Cancelar</a>
+            </div>
+        </div>
+    </div>
+    <!-- Formulario -->
+    <!-- Footer -->
+    <footer class="page-footer font-small dark">
+        <div class="footer-copyright text-center py-3">© 2022 Pasteles Espaciales
+            <i class="fas fa-download"></i>
+            <a href="https://github.com/JavierAz/">Page GitHub</a>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
